@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stupid Bird</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        canvas {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        #fly{
+            background:#1abc9c;
+            padding:1.2em 1.4em;
+            font-size:20px;
+            margin:5px;
+            border:none;
+            border-radius:10px;
+            box-shadow:0 9px gray;
+            cursor:pointer;
+            outline:none;
+            position: absolute;
+            top: 250px;
+            left: 630px;
+        }
+        #reset{
+            background:#1abc9c;
+            padding:1.2em 1.4em;
+            font-size:20px;
+            margin:5px;
+            border:none;
+            border-radius:10px;
+            box-shadow:0 9px gray;
+            cursor:pointer;
+            outline:none;
+            position: absolute;
+            top: 400px;
+            left: 620px;
+        }
+    </style>
+</head>
+<body onload="draw()">
+<canvas width="400" height="550" id="myCanvas" style="border: 1px solid aqua"></canvas>
+<audio id="music">
+    <source src="Effect/ting.mp3">
+</audio>
+<audio id="music1">
+    <source src="Effect/die.mp3">
+</audio>
+
+<input type="button" value="Restart" id="reset" onclick="restart()" style="display: none">
+<input type="button" value="Fly" id="fly" onclick="start()">
+</body>
+<script src="flappyBird.js"></script>
+</html>
