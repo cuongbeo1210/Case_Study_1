@@ -106,8 +106,7 @@ function draw() {
 function start() {
     play1()
     document.getElementById("fly").style.display = "none"
-// function clearCanvas(){
-//     canvas.clearRect(0, 0, canvas.width, canvas.height)
+
 }
 
 window.addEventListener('none', musicPlay)
